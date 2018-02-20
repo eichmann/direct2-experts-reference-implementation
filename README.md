@@ -2,6 +2,7 @@
 A JSP reference implementation for the direct2experts federated search protocol
 
 While there are a number of implementation alternatives, I'll use XML to present representations here for human readability.
+This implementation also uses a supporting JSP tag library, [FederationTagLib](http://github.com/eichmann/FederationTagLib).
 
 # Site Discovery
 
