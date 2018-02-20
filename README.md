@@ -2,7 +2,7 @@
 A JSP reference implementation for the direct2experts federated search protocol
 
 While there are a number of implementation alternatives, I'll use XML to present representations here for human readability.
-#Site Discovery
+# Site Discovery
 Based upon the discussion at the August 6, 2010 meeting, I am assuming that each site with share with other participating sites a bootstrap target URL that will provide the metadata characterizing that target site.  My assumption here is that we wish to minimize the complexity of information sharing by humans that is necessary and that we can accommodate evolution of the metadata characterizing a target site by periodically refreshing results from the bootstrap URL.  I propose this URL just be something along the lines of
 <bootstrap-URL-prefix>/FS.xml
 in the spirit of the robots.txt standard, without the requirement that the target file be at the root of the server space.  As an example, the U Iowa boostrap URL might be
