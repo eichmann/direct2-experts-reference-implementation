@@ -56,11 +56,13 @@ The response to an aggregate query URL request will be a characterization of the
 
 An example for U Iowa might be
 
-> <aggregation-result>
->    <count>42</count>
->    <population-type>faculty,staff,students</population-type>
->    <preview-URL>http://www.icts.uiowa.edu/Loki/federation/searchPreview.jsp?query=<query-string></preview-URL>
->    <search-results-URL>http://www.icts.uiowa.edu/Loki/federation/search.jsp?query=<query-string></search-results-URL>
-> </aggregation-result>
+```
+<aggregation-result>
+   <count>42</count>
+   <population-type>faculty,staff,students</population-type>
+   <preview-URL>http://www.icts.uiowa.edu/Loki/federation/searchPreview.jsp?query=<query-string></preview-URL>
+   <search-results-URL>http://www.icts.uiowa.edu/Loki/federation/search.jsp?query=<query-string></search-results-URL>
+</aggregation-result>
+```
 
 Note that I'm assuming here that we're encoding the initial aggregation query string into the preview and search results URLs.
