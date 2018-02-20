@@ -4,6 +4,17 @@ A JSP reference implementation for the direct2experts federated search protocol
 While there are a number of implementation alternatives, I'll use XML to present representations here for human readability.
 This implementation also uses a supporting JSP tag library, [FederationTagLib](http://github.com/eichmann/FederationTagLib).
 
+# JSP files
+
+* FS.xml - bootstrap info for local site (see API)
+* aggregateQuery.jsp - performs a local search at the behest of a remote site
+* clickThrough.jsp - logs a user's selection of a remote result and redirects the user to the remote site
+* federatedSearch.jsp - the search interface for a local user to query remote sites
+* resources/ - directory containing webapp resources
+* FederationTagLib.sql - script for creation of PostgreSQL database schema for the custom tag library
+* search.jsp - logs a remote user's click through to this site and redirects to the actual local search interface
+* searchPreview.jsp - generates the i-frame preview content (see API)
+
 # Site Discovery
 
 Based upon the discussion at the August 6, 2010 meeting, I am assuming that each site with share with other participating sites a bootstrap target URL that will provide the metadata characterizing that target site.  My assumption here is that we wish to minimize the complexity of information sharing by humans that is necessary and that we can accommodate evolution of the metadata characterizing a target site by periodically refreshing results from the bootstrap URL.  I propose this URL just be something along the lines of
