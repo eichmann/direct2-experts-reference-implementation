@@ -13,7 +13,9 @@ Based upon the discussion at the August 6, 2010 meeting, I am assuming that each
 
 in the spirit of the robots.txt standard, without the requirement that the target file be at the root of the server space.  As an example, the U Iowa boostrap URL might be
 
-> http://www.icts.uiowa.edu/Loki/FS.xml
+```
+http://www.icts.uiowa.edu/Loki/FS.xml
+```
 
 Note that I'm not proposing that the bootstrap URL need necessarily be static, or necessarily XML, but all consuming sites must be able to process the results.
 # Site Description
@@ -29,16 +31,20 @@ purely for the sake of being able to pretty-up the interface.  Also note that re
 
 The institution name is clearly just an alpha-numeric string (need to worry about Unicode?).  The aggregate query URL should be comprised of two components
 
-> <aggregate-query-URL-prefix><query-string>
+```
+<aggregate-query-URL-prefix><query-string>
+```
 
 Note that requiring the query string to be the last component avoids the need to deal with how to specify the syntax of the replacement variable if it were to occur at an arbitrary point in the URL.  This way, we can just concatenate the escaped query string to the end of the prefix string.
 
 An example for U Iowa might be
 
-> <site-description>
->    <name>University of Iowa</name>
->    <aggregate-query>http://www.icts.uiowa.edu/Loki/federation/aggregateQuery.jsp?query=</aggregate-query>
-> </site-description>
+```
+<site-description>
+   <name>University of Iowa</name>
+   <aggregate-query>http://www.icts.uiowa.edu/Loki/federation/aggregateQuery.jsp?query=</aggregate-query>
+</site-description>
+```
 
 Note that I'm assuming the location of the query string...
 # Result Description
