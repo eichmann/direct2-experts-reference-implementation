@@ -10,8 +10,6 @@ This implementation also uses a supporting JSP tag library, [FederationTagLib](h
 * aggregateQuery.jsp - performs a local search at the behest of a remote site
 * clickThrough.jsp - logs a user's selection of a remote result and redirects the user to the remote site
 * federatedSearch.jsp - the search interface for a local user to query remote sites
-* resources/ - directory containing webapp resources
-* FederationTagLib.sql - script for creation of PostgreSQL database schema for the custom tag library
 * search.jsp - logs a remote user's click through to this site and redirects to the actual local search interface
 * searchPreview.jsp - generates the i-frame preview content (see API)
 
